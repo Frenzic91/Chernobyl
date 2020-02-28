@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Chernobyl\Log.h" />
     <ClInclude Include="src\Chernobyl\Application.h" />
     <ClInclude Include="src\Chernobyl.h" />
     <ClInclude Include="src\Chernobyl\Core.h" />
     <ClInclude Include="src\Chernobyl\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Chernobyl\Log.cpp" />
     <ClCompile Include="src\Chernobyl\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -62,6 +64,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;CH_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Chernobyl\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

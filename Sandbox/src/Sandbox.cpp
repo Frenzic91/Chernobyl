@@ -1,5 +1,4 @@
 #include <Chernobyl.h>
-#include <iostream>
 
 class Sandbox : public Chernobyl::Application 
 {

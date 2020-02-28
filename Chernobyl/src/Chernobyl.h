@@ -4,6 +4,7 @@
 
 #include "Chernobyl/Application.h"
 #include "Chernobyl/Core.h"
+#include "Chernobyl/Log.h"
 
 // ------- Entry Point ---------
 // -----------------------------
